@@ -3,7 +3,7 @@
   Clone do site Amazon Prime Video, para fins de aprendizagem! 
 </h4>
 
-![Podcastr preview](public/app-preview.png)
+![Podcastr preview](public/preview.png)
 
 ## Tecnologias
 
