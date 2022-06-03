@@ -21,7 +21,7 @@ Este projeto foi desenvolido utilizando tecnologias Front-End de ponta. <br>
 **Clone este projeto e acesse a pasta:**
 
 ```bash
-$ git clone https://github.com/Guylhermee/podcastr.git && cd Amazon-Clone-Video
+$ git clone https://github.com/Guylhermee/Amazon-Clone-Video.git && cd Amazon-Clone-Video
 ```
 
 O aplicativo estará disponível para acesso no navegador ao abrir o arquivo `index.html`
