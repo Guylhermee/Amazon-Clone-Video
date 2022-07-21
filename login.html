@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Amazon</title>
+    <link rel="stylesheet" href="login_style.css" />
+  </head>
+
+  <body>
+    <div class="login">
+      <div class="login_logo">
+        <img src="./img/login-logo.jpg" />
+      </div>
+      <div class="login_container">
+        <h1>Fazer Login</h1>
+        <form name="formulario">
+          <h5>E-mail ou número de telefone celular</h5>
+          <input type="text" name="usuario" class="inpt" />
+          <h5>Senha</h5>
+          <input type="password" name="senha" class="inpt" />
+          <button class="login-button" type="button" onclick="validar()">
+            Fazer Login
+          </button>
+        </form>
+        <p>
+          Ao continuar, você concorda com as Condições de uso e Notificação de
+          privacidade da Amazon.
+        </p>
+        <button
+          class="register-button"
+          onclick="window.location.href='./index.html'"
+        >
+          Criar sua conta da Amazon
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function validar() {
+    var user = formulario.usuario;
+    var psw = formulario.senha;
+    if (user.value == "") {
+      alert("Usuário não informado ");
+      user.focus();
+    }
+    if (psw.value == "") {
+      alert("Senha não informada ");
+      psw.focus();
+    }
+  }
+</script>

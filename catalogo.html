@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon Prime Vídeo</title>
-    <script src="catalogo.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="center">
-            <div class="menu">
-                <div class="logo">
-                    <a href="/">
-                        <img src="./img/primelogo.png" width="100" alt="logo">
-                    </a>
-                </div>
-                <div class="menu-items">
-                    <a href="/">Home</a>
-                    <a href="/">TV Shows</a>
-                    <a href="/">Movies</a>
-                </div>
-            </div>
-            <div class="search">
-                <div class="input-search">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Search...">
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="main" id="main">
-        <div class="center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo Amazon Prime Vídeo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 
+    <script
+      src="https://kit.fontawesome.com/5fa77eb6fd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section>
+      <div class="navbar">
+        <a href="./index.html"
+          ><img src="./img/primelogo.png" class="logo"
+        /></a>
+        <a href="./index.html" class="navbar-item">Início</a>
+        <a href="#loja" class="navbar-item">Loja</a>
+        <a href="#canais" class="navbar-item">Canais</a>
+        <a href="./catalogo.html" class="navbar-item">Catálogo</a>
+        <a href="./login.html" class="navbar-item">Login</a>
+
+        <div class="search">
+          <div class="input-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <!--Ícone de busca do Font Awesome-->
+            <input type="text" placeholder="Busca" />
+          </div>
         </div>
+      </div>
+    </section>
+
+    <div class="main-banner-movie">
+      <div class="center-banner"></div>
     </div>
-    <script src="https://kit.fontawesome.com/aa1d7fc9dd.js" crossorigin="anonymous"></script>
-</body>
+
+    <div class="other-banner-movie">
+      <div class="movies"></div>
+    </div>
+  </body>
 </html>

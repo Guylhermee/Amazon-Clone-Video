@@ -4,44 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bem-vindo ao Prime Vídeo</title>
-  <link rel="stylesheet" href="style_index.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script
+      src="https://kit.fontawesome.com/5fa77eb6fd.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 
 <body>
   <section>
     <div class="navbar">
-      <a href="#home"><img src="./img/primelogo.png" class="logo"></a>
-      <a href="#home" class="navbar-item">Início</a>
-      <a href="#home" class="navbar-item">Loja</a>
-      <a href="#home" class="navbar-item">Canais</a>
-      <a href="#home" class="navbar-item">Categorias</a>
-      <a href="#home" class="navbar-item">Minha Área</a>
+      <a href="./index.html"><img src="./img/primelogo.png" class="logo" /></a>
+      <a href="./index.html" class="navbar-item">Início</a>
+      <a href="#loja" class="navbar-item">Loja</a>
+      <a href="#canais" class="navbar-item">Canais</a>
+      <a href="./catalogo.html" class="navbar-item">Catálogo</a>
+      <a href="./login.html" class="navbar-item">Login</a>
 
-      <div class="dropdown">
-        <button class="dropdown-button">PT-BR</button>
-        <div class="dropdown-content">
-          <a href="#">Inglês</a>
-          <a href="#">Espanhol</a>
-          <a href="#">Frances</a>
-          <a href="#">Italiano</a>
-          <a href="#">Português Brasil</a>
+      <div class="search">
+        <div class="input-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <!--Ícone de busca do Font Awesome-->
+          <input type="text" placeholder="Busca" />
         </div>
       </div>
     </div>
   </section>
 
   <section>
-    <img src="./img/banner.png" class="banner">
-    <p class="banner-title">Filmes, séries e muito mais</p>
+    <img src="./img/banner.png" class="banner" data-aos="fade-left">
+    <p class="banner-title" >Filmes, séries e muito mais</p>
     <p class="banner-subtitle">Assista aos premiados Amazon Originals e receba <br> entrega grátis em uma variedade de
       produtos.</p>
-    <button class="button">Já é Prime? Faça Login</button>
+    <button class="button" onclick="window.location.href='./login.html'">Já é Prime? Faça Login.</button>
+    <br> <br>
+    <button class="button">Experimente por 30 dias</button>
+    
   </section>
 
   <section>
     <div class="living">
       <img src="./img/living-room.jpg">
-      <div class="living-banner">
+      <div class="living-banner" data-aos="zoom-in-right">
         <p class="living-title">Loja Prime Video</p>
         <p class="living-subtitle">Agora ainda mais filmes disponíveis para alugar, sem necessidade de assinatura Prime.</p>
         <button class="button" style="margin-left: 10px;">Alugar filmes</button>
@@ -52,7 +61,7 @@
   <section>
     <div class="channels">
       <br>
-      <div class="channels-banner">
+      <div class="channels-banner" data-aos="fade-up">
         <p class="channels-title">Adicione canais que você ama<br> na sua assinatura Prime
           <br>
         <p class="channels-subtitle">Com o Prime Video Channels, os clientes Prime podem assinar<br>
@@ -79,9 +88,9 @@
   <section>
     <div class="benefits">
       <br>
-      <img src="./img/Benefits-Devices.png" class="benefits-image">
-      <img src="./img/Benefits-Download.png" class="benefits-image">
-      <img src="./img/Benefits-DataSaver.png" class="benefits-image">
+      <img src="./img/Benefits-Devices.png" class="benefits-image" data-aos="flip-up">
+      <img src="./img/Benefits-Download.png" class="benefits-image" data-aos="flip-up">
+      <img src="./img/Benefits-DataSaver.png" class="benefits-image" data-aos="flip-up">
 
       <div>
         <p class="benefits-devices-1">Assista onde quiser
